@@ -18,7 +18,7 @@ class LoremIpsumCommand(sublime_plugin.TextCommand):
             # erase region
             self.view.erase(editor, selection)
             # insert para before current cursor position
-            self.view.insert(editor, selection.begin(), para.capitalize)
+            self.view.insert(editor, selection.begin(), para.capitalize())
 
             # insert para over the top of selection, but remaining selected (not behavior we want)
             # self.view.replace(editor, self.view.sel()[0], para)
